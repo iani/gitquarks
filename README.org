@@ -1,0 +1,34 @@
+#+TITLE: gitquarks
+
+* GitQuarks
+
+Quarks scheme using github. Very early and very small and simple attempt.
+
+
+* Principles
+
+- A global list is maintained in the GitQuarks repository.  It is contained in file GITQUARKS.txt.  Its format is:
+  - one line per gitquark.
+  - Each line consists of 2 items:
+    1. The name of the quark (can only contain alphanymeric characters, hyphens - and underscores).  No spaces are allowed in the name.
+    2. The full git url for downloading the quark.
+       Note: The name of the quark is separated from the url by a space.
+- GitQuarks reads this global list.
+- A GitQuark that depends on other GitQuakrs can list these in a file called DEPENDENCIES.txt.
+  The format of the DEPENDENCIES.txt file is the same as that of the GITQUARKS.txt.
+
+* Example of a GITQUARKS.txt file
+
+#+BEGIN_EXAMPLE
+notification https://github.com/iani/notification.git
+registry https://github.com/iani/registry.git
+gitquarks https://github.com/iani/gitquarks.git
+tiny-sc https://github.com/iani/tiny-sc.git
+#+END_EXAMPLE
+
+* Example of a DEPENDENCIES.txt file
+
+#+BEGIN_EXAMPLE
+notification https://github.com/iani/notification.git
+registry https://github.com/iani/registry.git
+#+END_EXAMPLE
