@@ -17,6 +17,12 @@ Quarks scheme using github. Very early and very small and simple attempt.
 - A GitQuark that depends on other GitQuakrs can list these in a file called DEPENDENCIES.txt.
   The format of the DEPENDENCIES.txt file is the same as that of the GITQUARKS.txt.
 
+* API (Commands)
+
+** GitQuarks install: <quarkname>
+** GitQuarks uninstall: <quarkname>
+** GitQuarks update
+
 * Example of a GITQUARKS.txt file
 
 #+BEGIN_EXAMPLE
